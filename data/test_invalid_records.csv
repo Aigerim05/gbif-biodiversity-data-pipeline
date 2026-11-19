@@ -1,0 +1,4 @@
+key,scientificName,kingdom,basisOfRecord,eventDate,year,decimalLatitude,decimalLongitude,countryCode,datasetKey
+1001806364696,"Corvus cornix Linnaeus, 1758",Animalia,HUMAN_OBSERVATION,2018-01-22T18:06,2018.0,120.0,76.999869,KZ,50c9509d-22c7-4a22-a47d-8c48425ef4a7
+1001806364697,"Corvus cornix Linnaeus, 1758",Animalia,HUMAN_OBSERVATION,2018-01-22T18:06,3000.0,43.348806,76.999869,KZ,50c9509d-22c7-4a22-a47d-8c48425ef4a7
+1001806364698,"Corvus cornix Linnaeus, 1758",Animalia,NOT_A_REAL_BASIS,2018-01-22T18:06,2018.0,43.348806,76.999869,KZ,50c9509d-22c7-4a22-a47d-8c48425ef4a7

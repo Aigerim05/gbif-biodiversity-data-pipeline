@@ -1,0 +1,56 @@
+{
+  "sampling_version": 2,
+  "collected_at_utc": "2026-11-14T08:44:25.891507+00:00",
+  "endpoint": "https://api.gbif.org/v1/occurrence/search",
+  "method": "fixed-quota six-stratum sample",
+  "record_count": 300,
+  "parameters_common": {
+    "country": "KZ",
+    "hasCoordinate": "true"
+  },
+  "strata": [
+    {
+      "period": "2016-2018",
+      "basis": "HUMAN_OBSERVATION",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    },
+    {
+      "period": "2016-2018",
+      "basis": "PRESERVED_SPECIMEN",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    },
+    {
+      "period": "2019-2021",
+      "basis": "HUMAN_OBSERVATION",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    },
+    {
+      "period": "2019-2021",
+      "basis": "PRESERVED_SPECIMEN",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    },
+    {
+      "period": "2022-2024",
+      "basis": "HUMAN_OBSERVATION",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    },
+    {
+      "period": "2022-2024",
+      "basis": "PRESERVED_SPECIMEN",
+      "requested": 50,
+      "obtained": 50,
+      "duplicates_skipped": 0
+    }
+  ],
+  "note": "Quotas are design choices, not population proportions."
+}

@@ -1,0 +1,4 @@
+schema_context,column,check,check_number,failure_case,index
+Column,basisOfRecord,"isin(['FOSSIL_SPECIMEN', 'HUMAN_OBSERVATION', 'LIVING_SPECIMEN', 'MACHINE_OBSERVATION', 'MATERIAL_CITATION', 'MATERIAL_ENTITY', 'MATERIAL_SAMPLE', 'OBSERVATION', 'OCCURRENCE', 'PRESERVED_SPECIMEN'])",0,NOT_A_REAL_BASIS,2
+Column,year,less_than_or_equal_to(2026),1,3000.0,1
+Column,decimalLatitude,"in_range(-90, 90)",0,120.0,0

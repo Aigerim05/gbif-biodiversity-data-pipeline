@@ -1,0 +1,208 @@
+{
+  "run_id": "fccbd3606c1a44bb8bbfc76129f36bc8",
+  "api_endpoint": "https://api.gbif.org/v1/occurrence/search",
+  "collection": {
+    "sampling_version": 2,
+    "collected_at_utc": "2026-11-14T08:44:25.891507+00:00",
+    "endpoint": "https://api.gbif.org/v1/occurrence/search",
+    "method": "fixed-quota six-stratum sample",
+    "record_count": 300,
+    "parameters_common": {
+      "country": "KZ",
+      "hasCoordinate": "true"
+    },
+    "strata": [
+      {
+        "period": "2016-2018",
+        "basis": "HUMAN_OBSERVATION",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      },
+      {
+        "period": "2016-2018",
+        "basis": "PRESERVED_SPECIMEN",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      },
+      {
+        "period": "2019-2021",
+        "basis": "HUMAN_OBSERVATION",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      },
+      {
+        "period": "2019-2021",
+        "basis": "PRESERVED_SPECIMEN",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      },
+      {
+        "period": "2022-2024",
+        "basis": "HUMAN_OBSERVATION",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      },
+      {
+        "period": "2022-2024",
+        "basis": "PRESERVED_SPECIMEN",
+        "requested": 50,
+        "obtained": 50,
+        "duplicates_skipped": 0
+      }
+    ],
+    "note": "Quotas are design choices, not population proportions."
+  },
+  "reused_cached_source": true,
+  "kafka_start_offset": 1500,
+  "api_collected": 300,
+  "kafka_published": 300,
+  "kafka_consumed": 300,
+  "valid": 300,
+  "invalid": 0,
+  "validation_failures": 0,
+  "cleaning": {
+    "before_cleaning": 300,
+    "after_cleaning": 300,
+    "duplicates_removed": 0,
+    "missing_before": {
+      "key": 0,
+      "scientificName": 0,
+      "kingdom": 0,
+      "basisOfRecord": 0,
+      "eventDate": 0,
+      "year": 0,
+      "decimalLatitude": 0,
+      "decimalLongitude": 0,
+      "countryCode": 0,
+      "datasetKey": 0
+    },
+    "missing_after": {
+      "key": 0,
+      "scientificName": 0,
+      "kingdom": 0,
+      "basisOfRecord": 0,
+      "eventDate": 0,
+      "year": 0,
+      "decimalLatitude": 0,
+      "decimalLongitude": 0,
+      "countryCode": 0,
+      "datasetKey": 0,
+      "distance_to_almaty_km": 0,
+      "period": 0
+    },
+    "filtered_analysis_count": 99,
+    "filtered_definition": "human observations within 500 km of Almaty",
+    "group_count": 6,
+    "pivot_shape": [
+      3,
+      3
+    ],
+    "median_distance_to_almaty_km": 544.7,
+    "distance_reference": "Almaty 43.238949 N, 76.889709 E"
+  },
+  "invalid_tests": {
+    "deliberate_test_count": 3,
+    "detected_invalid": 3,
+    "test_errors": 3
+  },
+  "database": {
+    "processed_records": 300,
+    "first_load_total": 300,
+    "second_load_total": 300,
+    "unique_database_keys": 300,
+    "database_total": 300,
+    "current_batch_stored": 300,
+    "database_contains_current_batch": true,
+    "unchanged_on_second_load": true,
+    "sql_verification": {
+      "count_query": "SELECT COUNT(*) AS total FROM occurrences",
+      "count_result": 300,
+      "unique_query": "SELECT COUNT(DISTINCT key) AS unique_keys FROM occurrences",
+      "unique_result": 300,
+      "basis_query": "SELECT basis_of_record, COUNT(*) AS n FROM occurrences GROUP BY basis_of_record ORDER BY n DESC",
+      "basis_result": [
+        [
+          "PRESERVED_SPECIMEN",
+          150
+        ],
+        [
+          "HUMAN_OBSERVATION",
+          150
+        ]
+      ]
+    }
+  },
+  "analysis": {
+    "database_records_analyzed": 300,
+    "basis_counts": {
+      "HUMAN_OBSERVATION": 150,
+      "PRESERVED_SPECIMEN": 150
+    },
+    "kingdom_counts": {
+      "Animalia": 180,
+      "Plantae": 119,
+      "Fungi": 1
+    },
+    "period_counts": {
+      "2016-2018": 100,
+      "2019-2021": 100,
+      "2022-2024": 100
+    },
+    "median_distance_by_basis_km": {
+      "HUMAN_OBSERVATION": 19.6,
+      "PRESERVED_SPECIMEN": 1723.9
+    },
+    "numerical_describe": {
+      "year": {
+        "count": 300.0,
+        "mean": 2021.0,
+        "std": 2.45,
+        "min": 2018.0,
+        "25%": 2018.0,
+        "50%": 2021.0,
+        "75%": 2024.0,
+        "max": 2024.0
+      },
+      "decimal_latitude": {
+        "count": 300.0,
+        "mean": 44.47,
+        "std": 2.49,
+        "min": 41.52,
+        "25%": 43.13,
+        "50%": 43.24,
+        "75%": 44.22,
+        "max": 53.07
+      },
+      "decimal_longitude": {
+        "count": 300.0,
+        "mean": 70.47,
+        "std": 10.77,
+        "min": 47.89,
+        "25%": 55.38,
+        "50%": 76.87,
+        "75%": 77.06,
+        "max": 85.99
+      },
+      "distance_to_almaty_km": {
+        "count": 300.0,
+        "mean": 692.34,
+        "std": 780.63,
+        "min": 1.67,
+        "25%": 14.4,
+        "50%": 544.72,
+        "75%": 1723.95,
+        "max": 2303.69
+      }
+    },
+    "figure_interpretations": {
+      "01_period_kingdom.png": "Within-period kingdom shares (not population shares); largest kingdom by period: {'2016-2018': 'Animalia', '2019-2021': 'Animalia', '2022-2024': 'Animalia'}. Period/basis quotas are fixed by design.",
+      "02_kingdom_locations.png": "Spatial locations of sampled occurrences. Overlapping points can be hidden; clusters may reflect observer activity, not organism abundance.",
+      "03_basis_distances.png": "Median distances in km by record basis: {'HUMAN_OBSERVATION': 19.6, 'PRESERVED_SPECIMEN': 1723.9}. Distance describes reporting locations only; sampling quotas do not represent geographic prevalence."
+    }
+  }
+}
